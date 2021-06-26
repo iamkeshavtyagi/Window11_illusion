@@ -1,0 +1,78 @@
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .video-container > video {
+    display: block;
+    position: absolute;
+    left: 200%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  @media screen and (max-aspect-ratio: 1920/1080) {
+    .video-container > video {
+      height: 100%;
+    }
+  }
+  @media screen and (min-aspect-ratio: 1920/1080) {
+    .video-container > video {
+      width: 200%;
+    }
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    background-position: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+
+.startmenu{
+    position: absolute; 
+   
+    bottom: -655px;
+    width: 100%;
+
+    text-align: center;
+    transition: all 0.3s ease-in; 
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}  
+.icons{
+    color: white;
+}
+
+
+
+
